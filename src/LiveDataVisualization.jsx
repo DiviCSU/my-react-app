@@ -192,7 +192,7 @@ const LiveDataVisualization = ({apiKey, channelID}) => {
                   <div style={{ flex: 2 }}>
                     <LineChart width={500} height={300} data={liveData[field]} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                       <XAxis dataKey="time" tickFormatter={(tick)=> format(new Date(tick), 'hh:mm:ss aa')} />
-                      <YAxis type ="number" domain={[0,2000]} />
+                      <YAxis />
                       <CartesianGrid strokeDasharray="3 3" />
                       <Tooltip />
                       <Legend />
